@@ -11,8 +11,8 @@ const MovieDetails = () => {
     const fetchMovieDetails = async () => {
       try {
         setLoading(true);
-        // Use the same API key as your existing API service
-        const API_KEY = "4131f59d558389b616aa2aa91f8bfb83";
+        // Use API key from environment variables
+        const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
         const response = await fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}`);
         const movieData = await response.json();
         setMovie(movieData);

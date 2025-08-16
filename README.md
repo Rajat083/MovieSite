@@ -1,12 +1,74 @@
-# React + Vite
+# Movie Site - React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern movie discovery and watching application built with React and Vite, powered by The Movie Database (TMDB) API.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse popular movies
+- Search for movies
+- View detailed movie information
+- Watch movie trailers
+- Add movies to favorites (persisted in localStorage)
+- Responsive design for mobile and desktop
 
-## Expanding the ESLint configuration
+## Setup Instructions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the repository
+```bash
+git clone <repository-url>
+cd moviesite
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Environment Configuration
+1. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Get your TMDB API key:
+   - Go to [The Movie Database](https://www.themoviedb.org/)
+   - Create an account or sign in
+   - Go to Settings → API
+   - Generate an API key
+
+3. Update the `.env` file with your API key:
+   ```
+   VITE_TMDB_API_KEY=your_actual_api_key_here
+   ```
+
+### 4. Run the development server
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Technology Stack
+
+- **React** - Frontend framework
+- **Vite** - Build tool and dev server
+- **React Router** - Client-side routing
+- **TMDB API** - Movie data and trailers
+- **CSS3** - Styling and responsive design
+
+## Project Structure
+
+```
+src/
+├── components/     # Reusable UI components
+├── pages/         # Page components
+├── contexts/      # React context providers
+├── services/      # API service functions
+└── css/          # Styling files
+```
