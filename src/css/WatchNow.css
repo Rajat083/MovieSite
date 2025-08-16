@@ -1,0 +1,270 @@
+.watch-now-page {
+  min-height: 100vh;
+  background-color: #000;
+  color: white;
+  padding: 1rem;
+}
+
+.watch-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.back-to-details {
+  text-decoration: none;
+}
+
+.back-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+  background-color: #555;
+}
+
+.watch-header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #fff;
+}
+
+.video-container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.video-placeholder {
+  flex: 1;
+  background-color: #111;
+  border-radius: 8px;
+  padding: 2rem;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #333;
+}
+
+.placeholder-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.placeholder-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.placeholder-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ccc;
+}
+
+.note {
+  font-style: italic;
+  color: #888 !important;
+  font-size: 1rem !important;
+}
+
+.trailer-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #333;
+}
+
+.trailer-section h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.trailer-placeholder {
+  background-color: #222;
+  padding: 2rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+}
+
+.trailer-placeholder p {
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.trailer-placeholder small {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+.video-player {
+    width: 100%;
+    height: 600px;
+    background-color: #000;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    margin: 1rem;
+    border: none;
+}
+
+.no-trailer {
+    flex: 1;
+    background-color: #111;
+    border-radius: 8px;
+    padding: 2rem;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #333;
+}
+
+.no-trailer-content {
+    text-align: center;
+    max-width: 400px;
+}
+
+.no-trailer-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.no-trailer-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #ccc;
+}
+
+.movie-poster-fallback {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.movie-poster-fallback img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.movie-info-sidebar {
+  width: 300px;
+  background-color: #111;
+  padding: 1.5rem;
+  border-radius: 8px;
+  height: fit-content;
+  margin: 1rem 1.5rem;
+}
+
+.movie-poster-small img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.movie-details-small h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.movie-details-small p {
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.movie-details-small strong {
+  color: #fff;
+}
+
+.genres-small {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.genre-tag-small {
+  background-color: #333;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  border: 1px solid #555;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .video-container {
+    flex-direction: column;
+  }
+
+  .movie-info-sidebar {
+    width: 90%;
+    display: flex;
+    margin: 1.5rem;
+  }
+
+  .movie-poster-small {
+    flex-shrink: 0;
+    width: 150px;
+  }
+
+  .movie-details-small {
+    flex: 1;
+  }
+
+  .video-player {
+    height: 400px;
+    width: 90%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .watch-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .watch-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .video-placeholder {
+    min-height: 300px;
+    padding: 1rem;
+  }
+
+  .placeholder-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .movie-info-sidebar {
+    flex-direction: column;
+  }
+  
+
+  .movie-poster-small {
+    width: 200px;
+    margin: 0 auto;
+  }
+}

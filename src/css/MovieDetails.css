@@ -1,0 +1,142 @@
+.movie-details {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.back {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.movie-details-content {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.movie-poster-large {
+    flex-shrink: 0;
+    width: 300px;
+}
+
+.movie-poster-large img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.movie-info-detailed {
+    flex: 1;
+}
+
+.movie-info-detailed h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.release-date, .rating {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.rating {
+    color: #ffd700;
+}
+
+.overview {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin: 1.5rem 0;
+    color: #ddd;
+}
+
+.genres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.genre-tag {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid #555;
+}
+
+.watch-now {
+    margin-top: 2rem;
+}
+
+.watch-now-btn {
+    background: linear-gradient(45deg, #ff4757, #ff3742);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+}
+
+.watch-now-btn:hover {
+    background: linear-gradient(45deg, #ff3742, #ff2d37);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 71, 87, 0.4);
+}
+
+.watch-now a {
+    text-decoration: none;
+}
+
+.loading, .error {
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.error {
+    color: #ff6b6b;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .movie-details {
+        padding: 1rem;
+    }
+
+    .movie-details-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .movie-poster-large {
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .movie-info-detailed h1 {
+        font-size: 2rem;
+    }
+
+    .overview {
+        font-size: 1rem;
+    }
+
+    .genres {
+        align-items: center;
+        justify-content: center;
+    }
+}
