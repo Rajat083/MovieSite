@@ -1,8 +1,8 @@
-# Movie Site - React + Vite
+# 🎬 Movie Site - React + Vite
 
 A modern movie discovery and watching application built with React and Vite, powered by The Movie Database (TMDB) API.
 
-## Features
+## 🚀 Features
 
 - Browse popular movies
 - Search for movies
@@ -11,7 +11,7 @@ A modern movie discovery and watching application built with React and Vite, pow
 - Add movies to favorites (persisted in localStorage)
 - Responsive design for mobile and desktop
 
-## Setup Instructions
+## ⚙️ Setup Instructions
 
 ### 1. Clone the repository
 ```bash
@@ -54,7 +54,7 @@ The application will be available at `http://localhost:5173`
 npm run build
 ```
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 - **React** - Frontend framework
 - **Vite** - Build tool and dev server
