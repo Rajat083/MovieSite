@@ -11,9 +11,9 @@ A modern movie discovery and watching application built with React and Vite, pow
 - Add movies to favorites (persisted in localStorage)
 - Responsive design for mobile and desktop
 
-##🌐 Live Demo
+## 🌐 Live Demo
 
-#👉 MovieSite on Vercel: https://movie-site-ov84kj01h-rajat083s-projects.vercel.app/
+**👉 MovieSite on Vercel**: https://movie-site-ov84kj01h-rajat083s-projects.vercel.app/
 
 ## ⚙️ Setup Instructions
 
