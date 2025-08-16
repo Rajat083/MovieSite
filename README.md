@@ -11,6 +11,10 @@ A modern movie discovery and watching application built with React and Vite, pow
 - Add movies to favorites (persisted in localStorage)
 - Responsive design for mobile and desktop
 
+##🌐 Live Demo
+
+#👉 MovieSite on Vercel: https://movie-site-ov84kj01h-rajat083s-projects.vercel.app/
+
 ## ⚙️ Setup Instructions
 
 ### 1. Clone the repository
@@ -61,6 +65,7 @@ npm run build
 - **React Router** - Client-side routing
 - **TMDB API** - Movie data and trailers
 - **CSS3** - Styling and responsive design
+- **Deployment** = Vercel
 
 ## Project Structure
 
